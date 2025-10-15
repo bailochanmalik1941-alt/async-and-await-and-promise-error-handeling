@@ -1,5 +1,5 @@
 //promise:it is use for callback hell(function call in more call function call) and for in feature you donot know what will happened(resove,reject)
-let resolve = prompt("Search for order");
+let x = prompt("Search for order");
 let p = new Promise(function (resolve, reject) {
     console.log("order on progress");
     confirm(" sucessfully your order is conformed");
@@ -30,4 +30,5 @@ p.then(function (value) {
 })
 p2.catch(function (error) {
     console.log("sorry sir your order has been cancelled ");
+
 })
